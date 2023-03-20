@@ -5,9 +5,8 @@ input.onButtonPressed(Button.B, function () {
     basic.showNumber(max)
 })
 let min = 0
-let currenttemperatura = 0
 let max = 0
-let _set = input.temperature()
+let currenttemperatura = input.temperature()
 max = currenttemperatura
 min = currenttemperatura
 basic.forever(function () {
@@ -19,7 +18,7 @@ basic.forever(function () {
     if (currenttemperatura > max) {
         max = currenttemperatura
     }
-    basic.pause(1500)
+    basic.pause(200)
     basic.clearScreen()
-    basic.pause(1500)
+    basic.pause(200)
 })
